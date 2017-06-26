@@ -1,4 +1,5 @@
 package groovy
+import genericlib.ExcelReader;
 
 class CurrentDateAndTime {
  
@@ -6,13 +7,15 @@ class CurrentDateAndTime {
 		def date = new Date()
 		def dts = date.format("yyyy-MM-dd-HH-mm-ss")
 		println (dts)
-		println 'hello world'
+		println 'hello preet'
 		}
 		
 	
 		
 		static void main(String[] args) {
-			dt();
+//			dt();
+			ExcelReader excel = new ExcelReader();
+			excel.excelFileReader();
 		}
 	
 	
